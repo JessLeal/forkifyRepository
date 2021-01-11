@@ -15,10 +15,6 @@ import icons from 'url:../img/icons.svg'; //Parcel 2
 //   module.hot.accept();
 // }
 
-const newFeature = function () {
-  console.log('Welcome to the application');
-};
-
 const controlRecipe = async function () {
   try {
     const id = window.location.hash.slice(1);
@@ -139,6 +135,5 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 init();
